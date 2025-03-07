@@ -2,6 +2,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Сначала нужно запустить WebSocket сервер. Он находится в кореневой папке сайта [server.ts]. 
+
+Для запуска:
+```bash
+npm run build:server # Для компиляции в js
+
+npm run start:server # Для запуска сервера из папки созданной dist
+```
+
 First, run the development server:
 
 ```bash
