@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Modal from "@/app/components/Modal";
+import Chat from "@/app/components/Chat";
 
 async function getProducts() {
   const res = await fetch('http://localhost:3000/api/products');
@@ -236,6 +237,8 @@ export default function Home() {
           </form>
         )}
       </Modal>
+
+      <Chat isAdmin={true} />
     </main>
   );
 }
